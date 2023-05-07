@@ -5,7 +5,7 @@ with open("24-s1.txt") as file:
     if not f: break
     s1 = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
     for x in s1:
-      stroka = "F"+x+"O"
+      stroka = "Z"+x+"RO"
       if f.count(stroka)>0:
         k +=1
         break

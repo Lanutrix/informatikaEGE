@@ -1,7 +1,7 @@
 from os.path import exists
 
 dir = '24'
-files = []
+files = [164, 165, 166, 167]
 
 for i in files:
     if not exists(f"{dir}\\{i}.py"):
