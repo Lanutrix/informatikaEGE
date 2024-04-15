@@ -1,8 +1,8 @@
 import requests
 
 
-dir = '24'
-file = int(input())
+dir = '7'
 
-answ = requests.get(f'https://kpolyakov.spb.ru/school/ege/getanswer.php?egeNo={dir}&topicNo={file}').content.decode().replace('<br/>', '\n')
-print(answ)
+for i in range(132,134):
+    answ = requests.get(f'https://kpolyakov.spb.ru/school/ege/getanswer.php?egeNo={dir}&topicNo={i}').content.decode().replace('<br/>', '\n')
+    print(answ)
