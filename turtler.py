@@ -1,5 +1,15 @@
-from lzma import compress, decompress
+g = set()
 
-f = open('177.txt','rb').read()
-h = compress(f)
-open('177c.txt','wb').write(h)
+def f(n,s):
+    if s==10:
+        global g
+        g.add(n)
+        return
+    if abs(n)!=n:
+        f(abs(n),s+1)
+    if n>0 and (n-10)<0 or n<0 and (n-10)>0:
+        f(n-10,s+1)
+    f(n*(-2),s+1)
+
+f(1,0)
+print(len(g))
