@@ -1,4 +1,5 @@
-for x in range(17):
-    s = int(f'3700102',17)+int(f'802719',17)+x*17**3+x*17**4
-    if s%11==0:
-        print(x)
+n = 84
+
+for i in range(2,n//2+1):
+    if n%i==0:
+        print(i)
